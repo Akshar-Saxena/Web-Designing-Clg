@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Company</title>
+    <link rel="stylesheet" href="../utils.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Quicksand';
+        }
+        body{
+            background: url(../images/background.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        /* header, main, footer{
+            outline: 1px solid black;
+        } */
+        header nav{
+            display: flex;
+            background-color: transparent;
+            height: 60px;
+            align-items: center;
+            justify-content: center;
+        }
+        header nav ul{
+            display: flex;
+            list-style-type: none;
+        }
+        header nav ul li a{
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            font-size: 20px;
+        }
+        header nav ul li{
+            padding: 20px 20px ;
+        }
+        a:hover{
+            color: rgb(199, 199, 199);
+        }
+        footer h4{
+            position: absolute;
+            top: 96vh;
+            right: 0;
+            left: 0;
+            margin: 0px auto;
+            text-align: center;
+            font-size: 13px;
+            color: rgb(233, 233, 233);
+        }
+        main{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 40vh;
+            color: white;
+        }
+        main h1{
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Login</a></li>
+                <li><a href="">Registration</a></li>
+                <li><a href="">Catalogue</a></li>
+                <li><a href="">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Credentials</h1>
+        <h3>Email : <span id="email"></span></h3>
+        <h3>Password : <span id="pass"></span></h3>
+    </main>
+
+    <footer>
+        <h4>ABC Company : Made by Akshar Saxena</h4>
+    </footer>
+
+    <script>
+        var email = document.querySelector('#email')
+        var pass = document.querySelector('#pass')
+        var email_value = localStorage.getItem('email')
+        var pass_value = localStorage.getItem('pass')
+        email.textContent = email_value
+        pass.textContent = pass_value
+    </script>
+</body>
+</html>

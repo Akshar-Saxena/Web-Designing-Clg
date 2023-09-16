@@ -1,0 +1,29 @@
+form input{
+    width: 24vw;
+    height: 6vh;
+    padding: 0 4vh;
+    margin: 15px;
+    font-size: 18px;
+    border-radius: 20vh;
+    filter: drop-shadow(8px 8px 0px #101721);
+}
+
+form label{
+    font-size: 18px;
+}
+
+.btn{
+    padding: 8px 18px;
+    margin: 15px;
+    background-color: transparent;
+    color: white;
+    font-size: 15px;
+    border: 1px solid wheat;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    background-color: rgba(108, 108, 108, 0.612);
+    cursor: pointer;
+}
